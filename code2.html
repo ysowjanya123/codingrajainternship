@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Music Player</title>
+    <link rel="stylesheet" href="styles.css"> <!-- Link your custom CSS -->
+</head>
+<body>
+    <!-- Header with design elements -->
+    <header>
+        <div class="triangle-shape"></div>
+        <div class="arrow-right"></div>
+        <div class="geo-horizontal-line"></div>
+    </header>
+    
+    <!-- Main content -->
+    <main class="container">
+        <!-- Playlist Management Section -->
+        <section id="playlist">
+            <h2>Playlist</h2>
+            <!-- Playlist management controls and display -->
+            <ul id="playlist-items">
+                <!-- Playlist items will be dynamically added here -->
+            </ul>
+            <button id="add-to-playlist">Add Track</button>
+            <button id="remove-from-playlist">Remove Track</button>
+            <button id="clear-playlist">Clear Playlist</button>
+        </section>
+
+        <!-- Music Library Section -->
+        <section id="music-library">
+            <h2>Music Library</h2>
+            <!-- Display available tracks with album covers and artist names -->
+            <ul id="library-items">
+                <!-- Music library items will be dynamically added here -->
+            </ul>
+        </section>
+
+        <!-- Audio Controls Section -->
+        <section id="audio-controls">
+            <!-- Audio controls (play, pause, next, previous, volume) -->
+            <button id="play">Play</button>
+            <button id="pause">Pause</button>
+            <button id="next">Next</button>
+            <button id="previous">Previous</button>
+            <input type="range" id="volume" min="0" max="100" value="50">
+        </section>
+
+        <!-- Progress Bar Section -->
+        <section id="progress-bar">
+            <!-- Progress bar to show the progress of the currently playing track -->
+            <div id="progress"></div>
+        </section>
+
+        <!-- Shuffle and Repeat Options -->
+        <section id="shuffle-repeat">
+            <label for="shuffle">Shuffle</label>
+            <input type="checkbox" id="shuffle">
+            <label for="repeat">Repeat</label>
+            <input type="checkbox" id="repeat">
+        </section>
+    </main>
+
+    <script src="script.js"></script> <!-- Link your custom JavaScript -->
+</body>
+</html>
