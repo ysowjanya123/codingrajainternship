@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resume Builder</title>
+    <!-- Link Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <!-- Your custom CSS -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Header with design elements -->
+    <header>
+        <div class="triangle-shape"></div>
+        <div class="arrow-right"></div>
+        <div class="geo-horizontal-line"></div>
+    </header>
+    
+    <!-- Main content -->
+    <main class="container">
+        <!-- User Registration Form (Optional) -->
+        <section id="registration" class="mb-4">
+            <!-- User registration form goes here -->
+        </section>
+
+        <!-- Resume Templates Section -->
+        <section id="templates" class="mb-4">
+            <h2>Choose a Template</h2>
+            <!-- Display resume templates here -->
+            <div class="templates-grid">
+                <!-- Sample template -->
+                <div class="template">
+                    <!-- Template preview image -->
+                    <img src="template1.jpg" alt="Template 1">
+                    <!-- Template selection button -->
+                    <button>Select</button>
+                </div>
+                <!-- Add more templates as needed -->
+            </div>
+        </section>
+
+        <!-- Sections and Fields for User Input -->
+        <section id="input-fields" class="mb-4">
+            <h2>Fill in Your Details</h2>
+            <!-- Input fields for personal information, education, work experience, skills, etc. -->
+            <!-- Example: -->
+            <form id="resume-form">
+                <label for="name">Name</label>
+                <input type="text" id="name" name="name" required>
+                <!-- Add more input fields as needed -->
+                <button type="submit">Save</button>
+            </form>
+        </section>
+
+        <!-- Preview Mode -->
+        <section id="preview" class="mb-4">
+            <h2>Preview</h2>
+            <!-- Display preview of resume here -->
+            <div id="resume-preview">
+                <!-- Preview content will be dynamically generated here -->
+            </div>
+        </section>
+
+        <!-- Download and Export Options -->
+        <section id="download" class="mb-4">
+            <h2>Download Your Resume</h2>
+            <!-- Download options (PDF, Word, etc.) -->
+            <button id="download-pdf">Download as PDF</button>
+            <button id="download-word">Download as Word</button>
+        </section>
+    </main>
+
+    <!-- Your custom JavaScript -->
+    <script src="script.js"></script>
+</body>
+</html>
